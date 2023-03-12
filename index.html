@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c058cbe478.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('j8JHrQ0TtbnQnHd9u');
+        })();
+    </script>
+    <script src="portfolio.js" defer></script>
+    <title>Ayoub Hamdani</title>
+</head>
+
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header" class="nav-logo">
+                    <img src="images/logo.png" alt="logo" class="logo" >
+                    <h3><span class="a">A</span>youb.</h3>
+                </a>
+                <ul id="mobile-menu">
+                    <li> <a href="#header" onclick="closeMenu()">Home</a> </li>
+                    <li> <a href="#about" onclick="closeMenu()">About</a> </li>
+                    <li> <a href="#services" onclick="closeMenu()">Services</a> </li>
+                    <li> <a href="#portfolio" onclick="closeMenu()">Portfolio</a> </li>
+                    <li> <a href="#contact" onclick="closeMenu()">Contact</a> </li>
+                    <i class="fa-solid fa-xmark nav-icons" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars nav-icons" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Graphic Designer</p>
+                <h1>Hi, I'm <span>Ayoub</span>  <br> Hamdani from Morocco</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="row">
+            <div class="left">
+                <img src="images/ayoub-headshot.jpeg" alt="about-img" width="300px">
+            </div>
+             <div class="right">
+                <h1 class="title">About</h1>
+                <p class="text">Greetings! My name is Ayoub Hamdani, a skilled and dynamic graphic design freelancer hailing from the vibrant nation of Morocco. Currently pursuing academic excellence, I channel my creative energy into the world of graphic design as a part-time job.</p>
+                <p class="text">My proficiency in designing an array of marketing materials, including business cards, flyers, banners, posters, and announcements, enables me to effectively cater to diverse business needs. With a keen eye for detail, I craft visually compelling designs that not only capture the essence of your brand but also resonate with your target audience.</p>
+                <p class="text">Apart from graphic design, I am also a proficient social media manager. With a deep understanding of the latest trends and best practices in social media marketing, I can help your brand enhance its online presence and engage with your customers in meaningful ways.</p>
+                <p class="text">If you're looking for a reliable and creative graphic design freelancer who can help take your business to the next level, look no further! Feel free to reach out to me for more information.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('education')">Languages </p>
+                </div>
+
+                <div class="tab-content active" id="skills">
+                    <ul>
+                        <li> <span>Company brand identity</span> <br> Logos, typography, and color palettes. </li>
+                        <li><span>Advertisements and commercials</span> <br>  Promoting products or services in a visually appealing way.</li>
+                        <li><span>Product packaging</span> <br>  Designing the exterior of a product.</li>
+                        <li><span>Book covers</span> <br> Designing the exterior of a a book.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="experience">
+                    <ul>
+                        <li>2 years in <span>Mr. Graphique</span>, a printing comapny based in Morocco.</li>
+                        <li>Advertisement design for a theatrical show <span>Al Malh Al Mssousse</span>.</li>
+                        <li>Car design for a transfer company <span>Zagora Way</span>.</li>
+                        <li>Restaurant design + Food menus for <span>Snack Tiram</span>.</li>
+                        <li>Logo design for the Moroccan <span>Ministry of Culture & Youth</span>.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li> <span>English</span> <br>Speaking, reading, and writing. </li>
+                        <li><span>Arabic</span> <br>  Speaking, reading, and writing.</li>
+                        <li><span>French</span> <br> Speaking, reading, and writing.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-address-card service-icon"></i>
+                    <h3 class="service-title">Business Cards</h3>
+                    <p class="service-description">An attractive and well designed business card with all relevant contact information that will grab the attention of potential clients and help you stay well remembered after your initial meeting.</p>
+                
+                </div>
+                <div>
+                    <i class="fa-solid fa-sign-hanging service-icon"></i>
+                    <h3 class="service-title">Banners</h3>
+                    <p class="service-description">Create professional banners and billboards. You should take good care of this aspect to attract attention and summarize your company's services in a modern way.</p>
+                
+                </div>
+                <div>
+                    <i class="fa-solid fa-feather service-icon"></i>
+                    <h3 class="service-title">Logos</h3>
+                    <p class="service-description">Awesome and eye-catching Logo design. Grab attention, make a strong first impression, and make a professional statement as the foundation of your brand identity.</p>
+                
+                </div>
+                <div>
+                    <i class="fa-solid fa-book service-icon"></i>
+                    <h3 class="service-title">Book Covers</h3>
+                    <p class="service-description">A professional and decent cover for your book that makes the recipient attracted to the book.</p>
+                
+                </div>
+                <div>
+                    <i class="fa-solid fa-table-columns service-icon"></i>
+                    <h3 class="service-title">Flyers</h3>
+                    <p class="service-description">Flyer designs that impresses everyone.</p>
+                
+                </div>
+                <div>
+                    <i class="fa-solid fa-shirt service-icon"></i>
+                    <h3 class="service-title">Merch</h3>
+                    <p class="service-description">Catching designs for clothing inspired by your own ideas.</p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container" >
+            <h1 class="title">My Work</h1>
+            <div class="images-grid" id="images-container">
+
+            </div>
+
+            <button class="images-grid-more-btn" id="more-btn">Show all</button>
+
+            <div class="image-viewer-container" id="viewer-container">
+                <div class="image-viewer">
+                    <div class="image-viewer-top">
+                        <i id="close-viewer-btn" class="fa-solid fa-x"></i>
+                    </div>
+                    <div class="image-viewer-body" id="viewer">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div class="slider">
+                <div class="images">
+                    <img class="slider-img active" id="Banner" src="images/slider/work3.png" alt="work">
+                    <img class="slider-img" id="Flyer" src="images/slider/work1.png" alt="work">
+                    <img class="slider-img" id="Logo" src="images/slider/work24.png" alt="work">
+                    <img class="slider-img" id="Flyer" src="images/slider/work2.png" alt="work">
+                    <img class="slider-img" id="Book Cover" src="images/slider/work5.png" alt="work">
+                    <img class="slider-img" id="Logo" src="images/slider/work23.png" alt="work">
+                    <img class="slider-img" id="Flyer" src="images/slider/work7.png" alt="work">
+                    <img class="slider-img" id="Merch" src="images/slider/work8.png" alt="work">
+                    <img class="slider-img" id="Logo" src="images/slider/work22.png" alt="work">
+                    <img class="slider-img" id="Food Menu" src="images/slider/work9.png" alt="work">
+                    <img class="slider-img" id="Banner" src="images/slider/work10.png" alt="work">
+                    <img class="slider-img" id="Food Menu" src="images/slider/work11.png" alt="work">
+                    <img class="slider-img" id="Banner" src="images/slider/work14.png" alt="work">
+                    <img class="slider-img" id="Business Card" src="images/slider/work27.png" alt="work">
+                    <img class="slider-img" id="Banner" src="images/slider/work15.png" alt="work">
+                    <img class="slider-img" id="Logo" src="images/slider/work25.png" alt="work">
+                    <img class="slider-img" id="Banner" src="images/slider/work16.png" alt="work">
+                    <img class="slider-img" id="Business Card" src="images/slider/work26.png" alt="work">
+                    <img class="slider-img" id="Banner" src="images/slider/work17.png" alt="work">
+                    <img class="slider-img" id="Food Menu" src="images/slider/work18.png" alt="work">
+                    <img class="slider-img" id="Banner" src="images/slider/work19.png" alt="work">
+                    <img class="slider-img" id="Banner" src="images/slider/work20.png" alt="work">
+                    <img class="slider-img" id="Business Card" src="images/slider/work28.png" alt="work">
+                    <img class="slider-img" id="Banner" src="images/slider/work21.png" alt="work">
+                    <img class="slider-img" id="Car Stickers" src="images/slider/work4.png" alt="work">
+
+                </div>
+                <div class="previous" onclick="previousPage()">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+
+                <div class="next" onclick="nextPage()">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+                <div class="page-name">
+                    <p class="img-name">Flyer</p>
+                </div>
+            </div> -->
+        </div>
+    </div> 
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="left">
+                    <h1 class="title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> ayoubhamdanicontact@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +212 610-281428</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.facebook.com/ayoub.hamdani.7731247/"><i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://twitter.com/MrLLo8"><i class="fa-brands fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/ayoub_hamdani_17/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <p><a href="images/ayoub-cv.pdf" download> DOWNLOAD CV</a></p>
+                </div>
+                <div class="right">
+                    <form id="contact-form">
+                        <input type="hidden" name="contact_number">
+                        <input type="text" name="from_name" placeholder="Full Name" required>
+                        <input type="email" name="email_id" placeholder="Email Adress" required>
+                        <textarea name="message"  rows="6" placeholder="Message"></textarea>
+                        <button  type="submit" class="btn2" >Submit</button>
+                    </form> 
+                    <p class="status-success" id="status"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p class="copyright">Copyright 2022 ⓒ Ayoub. All rights reserved</p>
+    </div>
+
+    <div class="loader-container ">
+        <div class="loader"></i></div>
+        <p class="loader-msg">test</p>
+    </div>
+
+    <button class="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script>
+        let tabLinks = document.getElementsByClassName("tab-links")
+        let tabContent = document.getElementsByClassName("tab-content")
+
+        function openTab(tab){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active")
+            }
+            for(content of tabContent){
+                content.classList.remove("active")
+            }
+           
+            event.target.classList.add("active")
+            document.getElementById(tab).classList.add('active')
+        }
+
+
+    // scroll to top
+    let toTopButton = document.querySelector('.scroll-to-top')
+    window.addEventListener('scroll', function (){
+        if(window.pageYOffset > 100){
+            toTopButton.style.bottom = '10px'
+        }else{
+            toTopButton.style.bottom = '-60px'
+        }
+    })
+
+    toTopButton.addEventListener('click', function (){
+        window.scrollTo(0,0)
+    })
+
+    // responsiveness
+    let mobileMenu = document.getElementById('mobile-menu')
+    
+    
+    function openMenu(){
+        mobileMenu.style.right = 0
+    }
+    
+    function closeMenu(){
+        mobileMenu.style.right = "-500px"
+    }
+
+    // window.addEventListener("resize", function(){
+    //     if(window.innerWidth<=800){
+            
+    //     }
+    // });
+    </script>
+
+<script type="text/javascript">
+    window.onload = function() {
+            // loader
+        let loaderContainer = document.querySelector('.loader-container')
+        let loader = document.querySelector('.loader')
+        let loaderMsg = document.querySelector('.loader-msg')
+        
+
+        let statusText = document.querySelector('#status')
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            loader.innerHTML =''
+            loaderMsg.innerHTML = 'Sending Message...'
+            loaderContainer.classList.add('active')
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = Math.random() * 100000 | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm('service_0slc50c', 'template_r3jff3h', this)
+                .then(function() {
+                    console.log('SUCCESS!');
+                    loaderContainer.classList.remove('active','success', 'failed')
+                    loader.innerHTML ='<i class="fa-solid fa-check"></i>'
+                    loaderMsg.innerHTML = 'Thanks for contacting me!'
+                    loaderContainer.classList.add('success')
+                    document.getElementById('contact-form').reset()
+                    setInterval(function(){
+                        loaderContainer.classList.remove('active','success', 'failed')
+                    }, 3800)
+                    
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    loaderContainer.classList.remove('active','success', 'failed')
+                    loader.innerHTML ='<i class="fa-solid fa-xmark"></i>'
+                    loaderMsg.innerHTML = 'Something went wrong please try again later'
+                    loaderContainer.classList.add('success')
+                    setInterval(function(){
+                        loaderContainer.classList.remove('active','success', 'failed')
+                    }, 3800)
+                });
+        });
+    }
+</script>
+    
+</body>
+</html>
